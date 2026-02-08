@@ -31,7 +31,7 @@ Substrate concentration,Reactor working volume,Cathode projected surface area,S/
 1.0,95,30,32,33,0.9,0
 1.4,34,12,35,30,0.9,0
 ```
-⚠️ **Important:** Include the target column (H2 production rate) with dummy values (use 0). The code requires this column to be present, but the values are ignored during prediction.
+**Important:** Include the target column (H2 production rate) with dummy values (use 0). The code requires this column to be present, but the values are ignored during prediction.
 
 ### Current Density
 
@@ -42,7 +42,7 @@ Substrate concentration,Reactor working volume,Cathode projected surface area,S/
 1.6,28,7,25,30,0.9,0
 ```
 
-⚠️ **Important:** Include the target column (Current density) with dummy values (use 0). The code requires this column to be present, but the values are ignored during prediction.
+**Important:** Include the target column (Current density) with dummy values (use 0). The code requires this column to be present, but the values are ignored during prediction.
 
 ## Usage
 
