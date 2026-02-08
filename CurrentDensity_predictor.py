@@ -332,38 +332,38 @@ def predict_current_density_complex_substrate(
 
 def current_density_all_organic(test_csv_path):
     return predict_current_density_all_organic(
-        train_dataset_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/Current_density/benchmark-dataset/cd_all_organic_train.csv",
+        train_dataset_path="dataset/Current_density/benchmark-dataset/cd_all_organic_train.csv",
         test_dataset_path=test_csv_path,
-        meta_train_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/Current_density/meta-feature-train/all-organic/MF-5-train.csv",
+        meta_train_path="dataset/Current_density/meta-feature-train/all-organic/MF-5-train.csv",
         target_column="Current density",
-        baseline_models_dir_BF1="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/Current_density/all-organic/baseline-models/BF-1/*.joblib",
-        baseline_models_dir_BF2="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/Current_density/all-organic/baseline-models/BF-2/*.joblib",
-        meta_model_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/Current_density/all-organic/meta-model/MetaHydroPred-current-density-all-organic.joblib",
+        baseline_models_dir_BF1="models/Current_density/all-organic/baseline-models/BF-1/*.joblib",
+        baseline_models_dir_BF2="models/Current_density/all-organic/baseline-models/BF-2/*.joblib",
+        meta_model_path="models/Current_density/all-organic/meta-model/MetaHydroPred-current-density-all-organic.joblib",
         output_csv_path="temp_pred_all_organic.csv"
     )
 
 def current_density_acetate(test_csv_path):
     return predict_current_density_acetate(
-        train_dataset_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/Current_density/benchmark-dataset/cd_acetate_train.csv",
+        train_dataset_path="dataset/Current_density/benchmark-dataset/cd_acetate_train.csv",
         test_dataset_path=test_csv_path,
-        meta_train_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/Current_density/meta-feature-train/acetate/MF-5-train.csv",
+        meta_train_path="dataset/Current_density/meta-feature-train/acetate/MF-5-train.csv",
         target_column="Current density",
-        baseline_models_dir_BF1="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/Current_density/acetate/baseline-models/BF-1/*.joblib",
-        baseline_models_dir_BF2="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/Current_density/acetate/baseline-models/BF-2/*.joblib",
-        meta_model_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/Current_density/acetate/meta-model/MetaHydroPred-current-density-acetate.joblib",
+        baseline_models_dir_BF1="models/Current_density/acetate/baseline-models/BF-1/*.joblib",
+        baseline_models_dir_BF2="models/Current_density/acetate/baseline-models/BF-2/*.joblib",
+        meta_model_path="models/Current_density/acetate/meta-model/MetaHydroPred-current-density-acetate.joblib",
         output_csv_path="temp_pred_acetate.csv"
     )
 
 def current_density_complex_substrate(test_csv_path):
     return predict_current_density_complex_substrate(
-        train_dataset_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/Current_density/benchmark-dataset/cd_complex_substance_train.csv",
+        train_dataset_path="dataset/Current_density/benchmark-dataset/cd_complex_substance_train.csv",
         test_dataset_path=test_csv_path,
-        meta_train_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/Current_density/meta-feature-train/complex-substrate/MF-4-train.csv",
+        meta_train_path="dataset/Current_density/meta-feature-train/complex-substrate/MF-4-train.csv",
         target_column="Current density",
-        baseline_models_dir_BF1="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/Current_density/complex-substance/baseline-models/BF-1/*.joblib",
-        baseline_models_dir_BF2="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/Current_density/complex-substance/baseline-models/BF-2/*.joblib",
-        baseline_models_dir_BF3="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/Current_density/complex-substance/baseline-models/BF-3/*.joblib",
-        meta_model_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/Current_density/complex-substance/meta-model/MetaHydroPred-current-density-complex-substrate.joblib",
+        baseline_models_dir_BF1="models/Current_density/complex-substance/baseline-models/BF-1/*.joblib",
+        baseline_models_dir_BF2="models/Current_density/complex-substance/baseline-models/BF-2/*.joblib",
+        baseline_models_dir_BF3="models/Current_density/complex-substance/baseline-models/BF-3/*.joblib",
+        meta_model_path="models/Current_density/complex-substance/meta-model/MetaHydroPred-current-density-complex-substrate.joblib",
         output_csv_path="temp_pred_complex.csv"
     )
 
@@ -454,7 +454,7 @@ if __name__ == "__main__":
     else:
         print("Running default test...")
         results = get_current_density_prediction(
-            "/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/Current_density/benchmark-dataset/cd_acetate_test.csv",
+            "dataset/Current_density/benchmark-dataset/cd_acetate_test.csv",
             type="acetate"
         )
         print(results)

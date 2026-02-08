@@ -287,38 +287,35 @@ def predict_h2_production_rate_complex_substrate(
 
 def h2_production_rate_all_organic(test_csv_path):
     return predict_h2_production_rate_all_organic(
-        train_dataset_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/H2_Production_Rate/benchmark-dataset/h2_all_organic_train.csv",
+        train_dataset_path="dataset/H2_Production_Rate/benchmark-dataset/h2_all_organic_train.csv",
         test_dataset_path=test_csv_path,
-        meta_train_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/H2_Production_Rate/meta-feature-train/all-organic/MF-6-train.csv",
+        meta_train_path="dataset/H2_Production_Rate/meta-feature-train/all-organic/MF-6-train.csv",
         target_column="H2 production rate",
-        baseline_models_dir_BF1="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/H2_Production_Rate/all-organic/baseline-models/BF-1/*.joblib",
-        baseline_models_dir_BF3="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/H2_Production_Rate/all-organic/baseline-models/BF-3/*.joblib",
-        meta_model_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/H2_Production_Rate/all-organic/meta-model/MetaHydroPred-h2-production-rate-all-organic.joblib",
+        baseline_models_dir_BF1="models/H2_Production_Rate/all-organic/baseline-models/BF-1/*.joblib",
+        baseline_models_dir_BF3="models/H2_Production_Rate/all-organic/baseline-models/BF-3/*.joblib",
+        meta_model_path="models/H2_Production_Rate/all-organic/meta-model/MetaHydroPred-h2-production-rate-all-organic.joblib",
         output_csv_path="temp_pred_all_organic.csv"
     )
 
 def h2_production_rate_acetate(test_csv_path):
     return predict_h2_production_rate_acetate(
-        train_dataset_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/H2_Production_Rate/benchmark-dataset/h2_acetate_train.csv",
+        train_dataset_path="dataset/H2_Production_Rate/benchmark-dataset/h2_acetate_train.csv",
         test_dataset_path=test_csv_path,
-        meta_train_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/H2_Production_Rate/meta-feature-train/acetate/MF-1-train.csv",
+        meta_train_path="dataset/H2_Production_Rate/meta-feature-train/acetate/MF-1-train.csv",
         target_column="H2 production rate",
-        baseline_models_dir_BF1="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/H2_Production_Rate/acetate/baseline-models/BF-1/*.joblib",
-        # baseline_models_dir_BF2="/media/vinoth/vinoth-disk/CBBL-WebServer-Ver2/DjangoProjects/DjangoProjects/BALALAB/MetaHydroPred_Prog/MetaHydroPred_models/Current_density/acetate/baseline-models/BF-2/*.joblib",
-        meta_model_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/H2_Production_Rate/acetate/meta-model/MetaHydroPred-h2-production-rate-acetate.joblib",
+        baseline_models_dir_BF1="models/H2_Production_Rate/acetate/baseline-models/BF-1/*.joblib",
+        meta_model_path="models/H2_Production_Rate/acetate/meta-model/MetaHydroPred-h2-production-rate-acetate.joblib",
         output_csv_path="temp_pred_acetate.csv"
     )
 
 def h2_production_rate_complex_substrate(test_csv_path):
     return predict_h2_production_rate_complex_substrate(
-        train_dataset_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/H2_Production_Rate/benchmark-dataset/h2_complex_substance_train.csv",
+        train_dataset_path="dataset/H2_Production_Rate/benchmark-dataset/h2_complex_substance_train.csv",
         test_dataset_path=test_csv_path,
-        meta_train_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/H2_Production_Rate/meta-feature-train/complex-substrate/MF-1-train.csv",
+        meta_train_path="dataset/H2_Production_Rate/meta-feature-train/complex-substrate/MF-1-train.csv",
         target_column="H2 production rate",
-        baseline_models_dir_BF1="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/H2_Production_Rate/complex-substance/baseline-models/BF-1/*.joblib",
-        # baseline_models_dir_BF2="/media/vinoth/vinoth-disk/CBBL-WebServer-Ver2/DjangoProjects/DjangoProjects/BALALAB/MetaHydroPred_Prog/MetaHydroPred_models/Current_density/complex-substance/baseline-models/BF-2/*.joblib",
-        # baseline_models_dir_BF3="/media/vinoth/vinoth-disk/CBBL-WebServer-Ver2/DjangoProjects/DjangoProjects/BALALAB/MetaHydroPred_Prog/MetaHydroPred_models/Current_density/complex-substance/baseline-models/BF-3/*.joblib",
-        meta_model_path="/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_models/H2_Production_Rate/complex-substance/meta-model/MetaHydroPred-h2-production-rate-complex-substrate.joblib",
+        baseline_models_dir_BF1="models/H2_Production_Rate/complex-substance/baseline-models/BF-1/*.joblib",
+        meta_model_path="models/H2_Production_Rate/complex-substance/meta-model/MetaHydroPred-h2-production-rate-complex-substrate.joblib",
         output_csv_path="temp_pred_complex.csv"
     )
 
@@ -411,7 +408,7 @@ if __name__ == "__main__":
     else:
         print("Running default test...")
         results = get_h2_production_prediction(
-            "/home/vinoth/SKKU-2026-Projects/MetaHydroPred_Prog/MetaHydroPred_dataset/H2_Production_Rate/benchmark-dataset/h2_complex_substance_test.csv",
+            "dataset/H2_Production_Rate/benchmark-dataset/h2_complex_substance_test.csv",
             type="complex-substrate"
         )
         print(results)
