@@ -27,7 +27,7 @@ python H2Production_predictor.py --type  --input  --output
 
 **Example:**
 ```bash
-python H2Production_predictor.py --type complex-substrate --input test_data.csv --output h2_predictions.csv
+python H2Production_predictor.py --type complex-substrate --input test_data.csv --output h2_complex-substrate_predictions.csv
 ```
 
 ### Current Density Prediction
@@ -39,11 +39,11 @@ python CurrentDensity_predictor.py --type  --input  --output
 
 **Example:**
 ```bash
-python CurrentDensity_predictor.py --type acetate --input test_data.csv --output cd_predictions.csv
+python CurrentDensity_predictor.py --type acetate --input test_data.csv --output cd_acetate_predictions.csv
 ```
 
 ## Input Data Format
 
 Your input CSV file should contain the appropriate features for each substrate type.
 
-**Note:** Ensure your test data matches the format of the training datasets provided in `MetaHydroPred_dataset/`.
+**Note:** Ensure your test data matches the format of the training datasets provided in `dataset/`.
