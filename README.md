@@ -23,6 +23,23 @@ Your input CSV file should contain the appropriate features for each substrate t
 
 **Note:** Ensure your test data matches the format of the training datasets provided in `dataset/`.
 
+### H₂ Production Rate
+
+**Example file (`h2_acetate_test.csv`):**
+```csv
+Substrate concentration,Reactor working volume,Cathode projected surface area,S/V ratio,Temperature,Applied voltage,H2 production rate
+1.0,95,30,32,33,0.9,1.09
+1.4,34,12,35,30,0.9,1.1
+```
+### Current Density
+
+**Example file (`cd_acetate_test.csv`):**
+```csv
+Substrate concentration,Reactor working volume,Cathode projected surface area,S/V ratio,Temperature,Applied voltage,Current density
+1.1,50,50,100,30,1.0,360
+1.6,28,7,25,30,0.9,85
+```
+
 ## Usage
 
 ### H₂ Production Rate Prediction
