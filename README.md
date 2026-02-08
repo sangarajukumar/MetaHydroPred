@@ -28,17 +28,21 @@ Your input CSV file should contain the appropriate features for each substrate t
 **Example file (`h2_acetate_test.csv`):**
 ```csv
 Substrate concentration,Reactor working volume,Cathode projected surface area,S/V ratio,Temperature,Applied voltage,H2 production rate
-1.0,95,30,32,33,0.9,1.09
-1.4,34,12,35,30,0.9,1.1
+1.0,95,30,32,33,0.9,0
+1.4,34,12,35,30,0.9,0
 ```
+⚠️ **Important:** Include the target column (H2 production rate) with dummy values (use 0). The code requires this column to be present, but the values are ignored during prediction.
+
 ### Current Density
 
 **Example file (`cd_acetate_test.csv`):**
 ```csv
 Substrate concentration,Reactor working volume,Cathode projected surface area,S/V ratio,Temperature,Applied voltage,Current density
-1.1,50,50,100,30,1.0,360
-1.6,28,7,25,30,0.9,85
+1.1,50,50,100,30,1.0,0
+1.6,28,7,25,30,0.9,0
 ```
+
+⚠️ **Important:** Include the target column (Current density) with dummy values (use 0). The code requires this column to be present, but the values are ignored during prediction.
 
 ## Usage
 
