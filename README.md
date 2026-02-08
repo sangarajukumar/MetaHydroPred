@@ -48,3 +48,19 @@ python CurrentDensity_predictor.py --type  --input  --output
 ```bash
 python CurrentDensity_predictor.py --type acetate --input test_data.csv --output cd_acetate_predictions.csv
 ```
+## Citation
+
+If you use MetaHydroPred in your research, please cite:
+
+```bash
+@article{,
+  title={},
+  author={},
+  journal={},
+  volume={},
+  number={},
+  pages={},
+  year={},
+  publisher={}
+}
+```
