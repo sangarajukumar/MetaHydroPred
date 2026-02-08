@@ -21,7 +21,7 @@ python -m pip install -r requirements.txt --no-cache-dir
 
 Your input CSV file should contain the appropriate features for each substrate type.
 
-**Note:** Ensure your test data matches the format of the training datasets provided in `dataset/`.
+**Note:** Input data must follow the exact column format specified below. Example training and testing datasets are available in `dataset/benchmark-dataset/` for reference.
 
 ### H₂ Production Rate
 
