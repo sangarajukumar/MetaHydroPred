@@ -3,6 +3,8 @@
 
 The official implementation of **MetaHydroPred: Accurate and Interpretable Prediction of Hydrogen Production and Current Density in Microbial Electrolysis Cells Using a Meta-learning Framework**
 
+<p align="center"><img src="/home/vinoth/SKKU-2026-Projects/MetaHydroPred/MetaHydroPred_workflow.png" width="1280"/></p>
+
 ## Installing environment
 First, install [Miniconda](https://docs.anaconda.com/miniconda/) or [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html).  
 Then create and activate the environment:
